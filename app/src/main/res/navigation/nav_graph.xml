@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.quiz.HomeFragment"
-        android:label="fragment_home"
+        android:label="Quiz App - Home"
         tools:layout="@layout/fragment_home" >
         <action
             android:id="@+id/action_homeFragment_to_questionFragment"
@@ -22,7 +22,7 @@
     <fragment
         android:id="@+id/questionFragment"
         android:name="com.example.quiz.QuestionFragment"
-        android:label="fragment_question"
+        android:label="Question"
         tools:layout="@layout/fragment_question" >
         <action
             android:id="@+id/action_questionFragment_to_summaryFragment"
@@ -35,7 +35,7 @@
     <fragment
         android:id="@+id/resultFragment"
         android:name="com.example.quiz.ResultFragment"
-        android:label="fragment_result"
+        android:label="Result"
         tools:layout="@layout/fragment_result" >
         <argument
             android:name="answerResultList"
@@ -49,7 +49,7 @@
     <fragment
         android:id="@+id/summaryFragment"
         android:name="com.example.quiz.SummaryFragment"
-        android:label="fragment_summary"
+        android:label="Summary"
         tools:layout="@layout/fragment_summary" >
         <action
             android:id="@+id/action_summaryFragment_to_resultFragment"
@@ -78,7 +78,7 @@
     <fragment
         android:id="@+id/questionListFragment"
         android:name="com.example.quiz.QuestionListFragment"
-        android:label="fragment_question_list"
+        android:label="Question List"
         tools:layout="@layout/fragment_question_list" >
         <action
             android:id="@+id/action_questionListFragment_to_addQuestionFragment"
@@ -90,7 +90,7 @@
     <fragment
         android:id="@+id/addQuestionFragment"
         android:name="com.example.quiz.AddQuestionFragment"
-        android:label="fragment_add_question"
+        android:label="Add Question"
         tools:layout="@layout/fragment_add_question" >
         <action
             android:id="@+id/action_addQuestionFragment_to_questionListFragment"

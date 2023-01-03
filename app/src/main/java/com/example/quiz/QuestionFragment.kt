@@ -66,7 +66,7 @@ class QuestionFragment : BaseFragment() {
         Toast.makeText(
             context,
             "You selected $selectedValue",
-            Toast.LENGTH_LONG
+            Toast.LENGTH_SHORT
         ).show()
 
 
@@ -82,10 +82,19 @@ class QuestionFragment : BaseFragment() {
             action.answersList = questionViewModel.listOfYourAnswers.toTypedArray()
             action.wrongAnswer = questionViewModel.wrongAnswer
             action.total = questionViewModel.questionList.size
+
+            setToDefault()
             findNavController(view).navigate(action)
         }
     }
 
+    private fun setToDefault() {
+        questionViewModel.questionList.clear()
+        questionViewModel.listOfYourAnswers.clear()
+        questionViewModel.wrongAnswer = 0
+        questionViewModel.correctAnswer = 0
+        questionViewModel.position = 0
+    }
 
 
     private fun populateFirstQuestion() {
