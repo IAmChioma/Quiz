@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".SummaryFragment">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/total_question"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="Total Question:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+            android:textSize="20sp" />
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+            android:id="@+id/total_question_count"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+<Space
+    android:layout_width="match_parent"
+    android:layout_height="10dp"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/correct_question"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="Correct Questions (Scores):"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+            android:textSize="20sp" />
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+            android:id="@+id/correct_question_count"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/wrong_answer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="Wrong Answer(s):"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+            android:textSize="20sp" />
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+            android:id="@+id/wrong_answer_count"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/your_score"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="Your score:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+            android:textSize="20sp" />
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+            android:id="@+id/your_score_count"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+<Button
+    android:id="@+id/btnTryAgain"
+    android:layout_width="match_parent"
+    android:layout_height="84dp"
+    android:layout_margin="20dp"
+    android:text="Try Again"
+    android:textSize="24sp" />
+<Button
+    android:id="@+id/btnResultAnalysis"
+    android:layout_width="match_parent"
+    android:layout_height="84dp"
+    android:layout_margin="20dp"
+    android:text="Result Analysis"
+    android:textSize="24sp" />
+
+
+</LinearLayout>
