@@ -56,12 +56,7 @@ class QuestionFragment : BaseFragment() {
         val selectedValue = clicked.text.toString()
 
         radioGroup.clearCheck()
-        if (questions[questionViewModel.position].correctAnswer == selectedValue) {
-            questionViewModel.updateCorrectAnswer()
-        } else {
-            questionViewModel.updateWrongAnswer()
-        }
-        questionViewModel.updateCurrentQuestionAnswer(selectedValue)
+        updateUsersAnswer(selectedValue) // increment wrong or correct answer and save user's selected answer
 
         Toast.makeText(
             context,
@@ -86,6 +81,15 @@ class QuestionFragment : BaseFragment() {
             setToDefault()
             findNavController(view).navigate(action)
         }
+    }
+
+    private fun updateUsersAnswer(selectedValue: String) {
+        if (questions[questionViewModel.position].correctAnswer == selectedValue) {
+            questionViewModel.updateCorrectAnswer()
+        } else {
+            questionViewModel.updateWrongAnswer()
+        }
+        questionViewModel.updateCurrentQuestionAnswer(selectedValue)
     }
 
     private fun setToDefault() {
