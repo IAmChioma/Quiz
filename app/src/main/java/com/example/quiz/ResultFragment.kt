@@ -1,23 +1,19 @@
 package com.example.quiz
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.quiz.databinding.ResultAnalysisLayoutBinding
 import com.example.quiz.db.Question
 import com.example.quiz.db.QuestionDatabase
 import kotlinx.android.synthetic.main.fragment_result.*
-import kotlinx.android.synthetic.main.fragment_summary.*
 import kotlinx.coroutines.launch
 
 
 class ResultFragment : BaseFragment() {
     lateinit var questions: List<Question>
-    var answerList: List<String> = arrayListOf();
+    var answerList: List<String> = arrayListOf()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -42,10 +38,6 @@ class ResultFragment : BaseFragment() {
             }
         }
 
-        btnHome.setOnClickListener{goToHome(it)}
     }
-    fun goToHome(it: View) {
-        val action = ResultFragmentDirections.actionResultFragmentToHomeFragment()
-        Navigation.findNavController(it).navigate(action)
-    }
+
 }
