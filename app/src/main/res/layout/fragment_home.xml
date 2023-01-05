@@ -12,14 +12,14 @@
         android:layout_height="wrap_content"
         android:textSize="30sp"
         android:gravity="center"
-        android:text="Welcome to Quiz App" />
+        android:text="@string/welcome_to_quiz_app" />
     <TextView
         android:layout_margin="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20sp"
         android:gravity="center"
-        android:text="This application is a quiz app that will test your android knowledge to know how much understanding you have acquired during the course" />
+        android:text="@string/this_application_is_a_quiz_app_that_will_test_your_android_knowledge_to_know_how_much_understanding_you_have_acquired_during_the_course" />
 
     <Space
         android:layout_width="match_parent"
@@ -30,7 +30,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
-        android:text="Start Quiz"
+        android:text="@string/start_quiz"
         android:textSize="24sp" />
 
     <Button
@@ -38,7 +38,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
-        android:text="Populate Questions"
+        android:text="@string/populate_questions"
         android:textSize="24sp" />
 
 </LinearLayout>

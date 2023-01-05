@@ -9,7 +9,7 @@ tools:context=".AddQuestionFragment">
         android:id="@+id/question_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Question:"
+        android:text="@string/question"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
         android:textSize="20sp" />
 <EditText
@@ -17,35 +17,35 @@ tools:context=".AddQuestionFragment">
     android:layout_height="wrap_content"
     android:inputType="text"
     android:id="@+id/title"
-    android:hint="Enter Question here"
+    android:hint="@string/enter_question_here"
     android:textAppearance="@style/TextAppearance.AppCompat.Large">
 </EditText>
 <TextView
         android:id="@+id/option_one_label"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Option 1:"
+        android:text="@string/option_1"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
         android:textSize="20sp" />
 <EditText
     android:id="@+id/edit_option_one"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:hint="Enter Option 1"
+    android:hint="@string/enter_option_1"
     android:inputType="textMultiLine"
     android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
     <TextView
         android:id="@+id/option_two_label"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Option 2:"
+        android:text="@string/option_2"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
         android:textSize="20sp" />
     <EditText
         android:id="@+id/edit_option_two"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Option 2"
+        android:hint="@string/enter_option_2"
         android:inputType="textMultiLine"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
 
@@ -53,28 +53,28 @@ tools:context=".AddQuestionFragment">
         android:id="@+id/option_three_label"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Option 3:"
+        android:text="@string/option_3"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
         android:textSize="20sp" />
     <EditText
         android:id="@+id/edit_option_three"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Option 3"
+        android:hint="@string/enter_option_3"
         android:inputType="textMultiLine"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
     <TextView
         android:id="@+id/option_correct_answer_label"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Correct Answer:"
+        android:text="@string/correct_answer"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
         android:textSize="20sp" />
     <EditText
         android:id="@+id/edit_correct_answer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Correct Answer"
+        android:hint="@string/enter_correct_answer"
         android:inputType="textMultiLine"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
     <Space
@@ -89,7 +89,7 @@ tools:context=".AddQuestionFragment">
     <Button
     android:layout_width="0dp"
     android:layout_height="wrap_content"
-    android:text="Delete"
+    android:text="@string/delete"
         android:layout_weight="1"
     android:id="@+id/button_delete"
         android:layout_margin="5dp"
@@ -99,7 +99,7 @@ tools:context=".AddQuestionFragment">
     <Button
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Save"
+        android:text="@string/save"
         android:layout_weight="1"
         android:id="@+id/button_save"
         android:layout_margin="5dp"

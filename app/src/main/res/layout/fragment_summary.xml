@@ -18,7 +18,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="2"
-            android:text="Total Question:"
+            android:text="@string/total_questions"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
             android:textSize="20sp" />
         <TextView
@@ -46,7 +46,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="2"
-            android:text="Correct Questions (Scores):"
+            android:text="@string/correct_questions_scores"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
             android:textSize="20sp" />
         <TextView
@@ -74,7 +74,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="2"
-            android:text="Wrong Answer(s):"
+            android:text="@string/wrong_answer_s"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
             android:textSize="20sp" />
         <TextView
@@ -102,7 +102,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="2"
-            android:text="Your score:"
+            android:text="@string/your_score"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
             android:textSize="20sp" />
         <TextView
@@ -123,14 +123,14 @@
     android:layout_width="match_parent"
     android:layout_height="84dp"
     android:layout_margin="20dp"
-    android:text="Try Again"
+    android:text="@string/try_again"
     android:textSize="24sp" />
 <Button
     android:id="@+id/btnResultAnalysis"
     android:layout_width="match_parent"
     android:layout_height="84dp"
     android:layout_margin="20dp"
-    android:text="Result Analysis"
+    android:text="@string/result_analysis"
     android:textSize="24sp" />
 
 
